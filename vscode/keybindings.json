@@ -18,36 +18,25 @@
     "key": "alt+p",
     "command": "extension.createProjectFromTemplate"
   },
-  // Toggle to terminal focus
+  //Disable / Enable vim.
   {
-    "key": "ctrl+`",
-    "command": "workbench.action.terminal.focus"
+    "key": "ctrl+alt+v",
+    "command": "toggleVim"
   },
-  //Toggle through multiple terminals
-    {
-    "key": "cmd+k",
-    "command": "workbench.action.terminal.focusNextPane",
-    "when": "terminalFocus"
-},
-{
-    "key": "cmd+j",
-    "command": "workbench.action.terminal.focusPreviousPane",
-    "when": "terminalFocus"
-},
+  // Switch focus to explorer
+  {
+    "key": "cmd+f",
+    "command": "revealInExplorer"
+  },
 
-  // Toggle to editor focus
+  // Toggle focus to editor.
   {
     "key": "ctrl+1",
     "command": "workbench.action.focusActiveEditorGroup",
     "when": "terminalFocus"
   },
-  //cycle to next terminal session
-  {
-    "key": "cmd+k",
-    "command": "workbench.action.terminal.focusNext",
-    "when": "terminalFocus"
-  },
-  // Move to the previous/next editor tab.
+
+  // Tab to the previous/next editor.
   {
     "key": "cmd+k",
     "command": "workbench.action.nextEditor"
@@ -93,25 +82,18 @@
     "command": "workbench.action.quickOpenSelectPrevious",
     "when": "inQuickOpen"
   },
-  // VSCode terminal commands.
-  // Open view and toggle terminal.
+  // VSCode terminal + Vim keybindings.
+  // Toggle focus to terminal.
   {
     "key": "ctrl+`",
-    "command": "workbench.action.terminal.focusTabs",
-    "when": "terminalFocus && terminalHasBeenCreated || terminalFocus && terminalProcessSupported || terminalHasBeenCreated && terminalTabsFocus || terminalProcessSupported && terminalTabsFocus"
+    "command": "workbench.action.terminal.focus"
   },
-  // Toggle back to editor.
-  {
-    "key": "cmd+1",
-    "command": "workbench.action.terminal.toggleTerminal",
-    "when": "terminal.active"
-  },
-  // Create new terminal.
+  //Create new terminal window
   {
     "key": "cmd+n",
     "command": "workbench.action.terminal.newInActiveWorkspace"
   },
-  // Close or kill terminal(s).
+  // Close or kill terminal window(s).
   {
     "key": "cmd+e",
     "command": "workbench.action.terminal.kill",
@@ -128,7 +110,7 @@
     "command": "workbench.action.terminal.split",
     "when": "terminalFocus && terminalProcessSupported"
   },
- // Switch focus between split terminals. 
+  // Switch focus between split terminals.
   {
     "key": "cmd+k",
     "command": "workbench.action.terminal.focusNextPane",
@@ -150,11 +132,13 @@
     "command": "workbench.action.terminal.focusPrevious",
     "when": "terminalFocus && terminalProcessSupported"
   },
+
   {
     "key": "shift+escape",
     "command": "workbench.action.terminal.hideFind",
     "when": "terminalFindVisible && terminalFocus && terminalHasBeenCreated || terminalFindVisible && terminalFocus && terminalProcessSupported"
   },
+
   //Disable default Keybindings.
   {
     "key": "alt+cmd+down",
