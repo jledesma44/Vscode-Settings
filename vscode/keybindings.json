@@ -127,7 +127,7 @@
     "command": "workbench.action.terminal.focusNext",
     "when": "terminalFocus && terminalProcessSupported"
   },
-  // Place your key bindings in this file to override the defaults
+  // Use tabs with vim keybindings to move selected text in visual mode.
   {
     "key": "tab",
     "command": "tab",
