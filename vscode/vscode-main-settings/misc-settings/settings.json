@@ -21,7 +21,7 @@
     },
     {
       // find the source definition instead of the .d.ts file
-      // 'f'ind the source 'd'efinition
+      // 'find the source 'definition.
       "before": ["f", "d"],
       "commands": ["typescript.goToSourceDefinition"]
     },
@@ -170,7 +170,7 @@
     "2": "https://rawgit.com/actarian/plausible-brdf-shader/master/textures/noise/cloud-1.png"
   },
 
-  // settings for webgl + glsl extensions
+  /* settings for webgl + glsl extensions */
   "glsl-canvas.refreshOnChange": false,
   "webgl-glsl-editor.format.placeSpaceAfterKeywords": true,
   "[glsl]": {

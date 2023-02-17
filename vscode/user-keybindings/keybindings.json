@@ -127,8 +127,13 @@
     "command": "workbench.action.terminal.focusNext",
     "when": "terminalFocus && terminalProcessSupported"
   },
-  // Use tabs with vim keybindings to move selected text in visual mode.
   {
+    "key": "cmd+j",
+    "command": "workbench.action.terminal.focusPrevious",
+    "when": "terminalFocus && terminalProcessSupported"
+  },
+  // Use tabs with vim keybindings to move selected text in visual mode.
+/*   {
     "key": "tab",
     "command": "tab",
     "when": "editorTextFocus && !editorTabMovesFocus"
@@ -137,12 +142,7 @@
     "key": "shift+tab",
     "command": "outdent",
     "when": "editorTextFocus && !editorTabMovesFocus"
-  },
-  {
-    "key": "cmd+j",
-    "command": "workbench.action.terminal.focusPrevious",
-    "when": "terminalFocus && terminalProcessSupported"
-  },
+  }, */
 
   {
     "key": "shift+escape",
