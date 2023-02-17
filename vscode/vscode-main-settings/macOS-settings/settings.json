@@ -53,37 +53,150 @@
       "value": "#42b883"
     }
   ],
-  "terminal.integrated.fontSize": 16,
+  "workbench.colorTheme": "Material Theme Darker High Contrast",
+  "materialTheme.accent": "Lime",
+  "workbench.iconTheme": "material-icon-theme",
+  "workbench.colorCustomizations": {
+    "[Nord Dark theme": {
+      "activityBar.background": "#fff"
+    },
+    "[Material Theme Darker High Contrast]": {
+      "activityBarBadge.background": "#C6FF00",
+      "activityBar.activeBorder": "#C6FF00",
+      "list.activeSelectionForeground": "#C6FF00",
+      "list.inactiveSelectionForeground": "#C6FF00",
+      "list.highlightForeground": "#C6FF00",
+      "scrollbarSlider.activeBackground": "#C6FF0050",
+      "editorSuggestWidget.highlightForeground": "#C6FF00",
+      "textLink.foreground": "#C6FF00",
+      "progressBar.background": "#C6FF00",
+      "pickerGroup.foreground": "#C6FF00",
+      "tab.activeBorder": "#C6FF00",
+      "notificationLink.foreground": "#C6FF00",
+      "editorWidget.resizeBorder": "#C6FF00",
+      "editorWidget.border": "#C6FF00",
+      "settings.modifiedItemIndicator": "#C6FF00",
+      "settings.headerForeground": "#C6FF00",
+      "panelTitle.activeBorder": "#C6FF00",
+      "breadcrumb.activeSelectionForeground": "#C6FF00",
+      "menu.selectionForeground": "#C6FF00",
+      "menubar.selectionForeground": "#C6FF00",
+      "editor.findMatchBorder": "#C6FF00",
+      "selection.background": "#C6FF0040",
+      "statusBarItem.remoteBackground": "#C6FF00"
+    },
+    "[Material Theme High Contrast]": {
+      "activityBarBadge.background": "#C6FF00",
+      "activityBar.activeBorder": "#C6FF00",
+      "list.activeSelectionForeground": "#C6FF00",
+      "list.inactiveSelectionForeground": "#C6FF00",
+      "list.highlightForeground": "#C6FF00",
+      "scrollbarSlider.activeBackground": "#C6FF0050",
+      "editorSuggestWidget.highlightForeground": "#C6FF00",
+      "textLink.foreground": "#C6FF00",
+      "progressBar.background": "#C6FF00",
+      "pickerGroup.foreground": "#C6FF00",
+      "tab.activeBorder": "#C6FF00",
+      "notificationLink.foreground": "#C6FF00",
+      "editorWidget.resizeBorder": "#C6FF00",
+      "editorWidget.border": "#C6FF00",
+      "settings.modifiedItemIndicator": "#C6FF00",
+      "settings.headerForeground": "#C6FF00",
+      "panelTitle.activeBorder": "#C6FF00",
+      "breadcrumb.activeSelectionForeground": "#C6FF00",
+      "menu.selectionForeground": "#C6FF00",
+      "menubar.selectionForeground": "#C6FF00",
+      "editor.findMatchBorder": "#C6FF00",
+      "selection.background": "#C6FF0040",
+      "statusBarItem.remoteBackground": "#C6FF00"
+    },
+    "[Material Theme Palenight High Contrast]": {
+      "activityBarBadge.background": "#7CB342",
+      "activityBar.activeBorder": "#7CB342",
+      "list.activeSelectionForeground": "#7CB342",
+      "list.inactiveSelectionForeground": "#7CB342",
+      "list.highlightForeground": "#7CB342",
+      "scrollbarSlider.activeBackground": "#7CB34250",
+      "editorSuggestWidget.highlightForeground": "#7CB342",
+      "textLink.foreground": "#7CB342",
+      "progressBar.background": "#7CB342",
+      "pickerGroup.foreground": "#7CB342",
+      "tab.activeBorder": "#7CB342",
+      "notificationLink.foreground": "#7CB342",
+      "editorWidget.resizeBorder": "#7CB342",
+      "editorWidget.border": "#7CB342",
+      "settings.modifiedItemIndicator": "#7CB342",
+      "settings.headerForeground": "#7CB342",
+      "panelTitle.activeBorder": "#7CB342",
+      "breadcrumb.activeSelectionForeground": "#7CB342",
+      "menu.selectionForeground": "#7CB342",
+      "menubar.selectionForeground": "#7CB342",
+      "editor.findMatchBorder": "#7CB342",
+      "selection.background": "#7CB34240",
+      "statusBarItem.remoteBackground": "#7CB342"
+    }
+  },
+  "beautify.ignore": "",
+  "bracket-pair-colorizer-2.depreciation-notice": false,
+  "colorize.colorized_variables": ["CSS", "SASS", "LESS"],
+  "color-highlight.markRuler": false,
+
+  // "editor.formatOnSave": true,
+  "editor.formatOnSave": true,
+  "editor.hover.delay": 1000,
+  "editor.bracketPairColorization.enabled": true,
+  "editor.guides.bracketPairsHorizontal": true,
+  "editor.guides.bracketPairs": true,
+  "editor.wordWrap": "on",
+  "editor.fontSize": 13,
+  "editor.tabSize": 2,
+  "editor.lineNumbers": "relative",
+  "editor.renderWhitespace": "none",
+  "editor.hover.enabled": true,
+  "editor.fontFamily": " Menlo, Monaco, 'Courier New', monospace",
+  "editor.defaultFormatter": "esbenp.prettier-vscode",
+  "editor.codeActionsOnSave": {
+    "source.fixAll": true
+  },
   "emmet.includeLanguages": {
     "javascript": "javascriptreact"
   },
-  "sync.gist": "bcd522cc9fed5e3e37c9a50886d706c2",
-  "git.confirmSync": false,
-  "liveServer.settings.donotShowInfoMsg": true,
-  "editor.renderWhitespace": "none",
-  "editor.hover.enabled": true,
-  "liveServer.settings.donotVerifyTags": true,
-  "workbench.iconTheme": "material-icon-theme",
-  "prettier.jsxSingleQuote": true,
+
+  // show eslint icon at bottom toolbar
+  "eslint.alwaysShowStatus": true,
+  "explorer.confirmDragAndDrop": false,
+  "explorer.confirmDelete": false,
   "files.associations": {
     "*.css": "scss",
     "*.kit": "html"
   },
-  "explorer.confirmDelete": false,
-  "prettier.singleQuote": true,
-  "editor.fontFamily": " Menlo, Monaco, 'Courier New', monospace",
-  "beautify.ignore": "",
+  "git.confirmSync": false,
+  "git.ignoreMissingGitWarning": true,
+  "git.openRepositoryInParentFolders": "never",
   "html.format.enable": false,
-  "editor.defaultFormatter": "esbenp.prettier-vscode",
   "[html]": {
     "editor.defaultFormatter": null
   },
   "indentRainbow.ignoreErrorLanguages": ["markdown, css"],
   "indentRainbow.excludedLanguages": ["plaintext"],
-  "editor.minimap.enabled": false,
-  "settingsSync.ignoredSettings": ["editor.fontSize"],
+  "javascript.format.enable": false,
+  "[javascript]": {
+    "editor.formatOnSave": false
+  },
+  "[javascriptreact]": {
+    "editor.formatOnSave": false
+  },
   "liveServer.settings.AdvanceCustomBrowserCmdLine": "",
+  "liveServer.settings.CustomBrowser": "firefox",
+  "liveServer.settings.donotShowInfoMsg": true,
+  "liveServer.settings.donotVerifyTags": true,
+  "open-in-browser.default": "firefox",
+  "prettier.jsxSingleQuote": true,
+  "prettier.singleQuote": true,
+  "settingsSync.ignoredSettings": ["editor.fontSize"],
+  "security.workspace.trust.untrustedFiles": "open",
   "terminal.external.osxExec": "iTerm.app",
+  "terminal.integrated.fontSize": 14,
   "terminal.integrated.defaultProfile.windows": "Ubuntu (WSL)",
   "terminal.integrated.profiles.windows": {
     "shell": {
@@ -115,54 +228,9 @@
     }
   },
   "terminal.integrated.tabs.location": "left",
-  "javascript.format.enable": false,
-  "editor.formatOnSave": true,
-  "editor.formatOnPaste": true,
-  "security.workspace.trust.untrustedFiles": "open",
-  "editor.wordWrap": "on",
-
-  "workbench.colorCustomizations": {
-    "[Nord Dark theme": {
-      "activityBar.background": "#fff"
-    }
-  },
-  "editor.fontSize": 14,
   "terminal.integrated.cursorBlinking": true,
-  "git.ignoreMissingGitWarning": true,
 
-  // These are all my auto-save configs
-
-  // "editor.formatOnSave": true,
-
-  // turn it off for JS and JSX, we will do this via eslint
-
-  "[javascript]": {
-    "editor.formatOnSave": false
-  },
-  "[javascriptreact]": {
-    "editor.formatOnSave": false
-  },
-
-  // show eslint icon at bottom toolbar
-
-  "eslint.alwaysShowStatus": true,
-
-  // tell the ESLint plugin to run on save
-
-  "editor.codeActionsOnSave": {
-    "source.fixAll": true
-  },
-  "bracket-pair-colorizer-2.depreciation-notice": false,
-  "editor.hover.delay": 1000,
-  "editor.bracketPairColorization.enabled": true,
-  "editor.guides.bracketPairsHorizontal": true,
-  "editor.guides.bracketPairs": true,
-  "colorize.colorized_variables": ["CSS", "SASS", "LESS"],
-  "workbench.colorTheme": "Community Material Theme Palenight High Contrast",
-  "liveServer.settings.CustomBrowser": "firefox",
-  "explorer.confirmDragAndDrop": false,
-  "color-highlight.markRuler": false,
-  "files.autoSave": "afterDelay",
+  /* Vim key bindings */
   "vim.easymotion": true,
   "vim.incsearch": true,
   "vim.useSystemClipboard": true,
