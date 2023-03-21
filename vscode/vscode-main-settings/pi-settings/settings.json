@@ -85,7 +85,7 @@
   },
   "bracketPairColorizer.depreciation-notice": false,
   "colorize.colorized_variables": ["SASS", "CSS", "LESS"],
-  "colorize.hide_current_line_decorations": false, 
+  "colorize.hide_current_line_decorations": false,
   "editor.lineNumbers": "relative",
   "editor.linkedEditing": true,
   "editor.fontSize": 13,
@@ -122,7 +122,7 @@
   "terminal.integrated.tabs.location": "left",
   "terminal.integrated.defaultProfile.linux": "zsh",
   "security.workspace.trust.untrustedFiles": "open",
-  
+
   /* Vim default key bindings */
   "vim.easymotion": true,
   "vim.incsearch": true,
@@ -154,5 +154,90 @@
   "vim.handleKeys": {
     "<C-a>": false,
     "<C-f>": false
-  }
+  },
+  "better-comments.tags": [
+    //BETTER COMMENTS DEFAULTS
+    {
+      "tag": "!",
+      "color": "#FF2D00",
+      "strikethrough": false,
+      "underline": false,
+      "backgroundColor": "transparent",
+      "bold": false,
+      "italic": false
+    },
+    {
+      "tag": "?",
+      "color": "#3498DB",
+      "strikethrough": false,
+      "underline": false,
+      "backgroundColor": "transparent",
+      "bold": false,
+      "italic": false
+    },
+    {
+      "tag": "//",
+      "color": "#474747",
+      "strikethrough": true,
+      "underline": false,
+      "backgroundColor": "transparent",
+      "bold": false,
+      "italic": false
+    },
+    {
+      "tag": "todo",
+      "color": "#FF8C00",
+      "strikethrough": false,
+      "underline": false,
+      "backgroundColor": "transparent",
+      "bold": false,
+      "italic": false
+    },
+    {
+      "tag": "*",
+      "color": "#98C379",
+      "strikethrough": false,
+      "underline": false,
+      "backgroundColor": "transparent",
+      "bold": false,
+      "italic": false
+    },
+    //KEYBINDING SETTINGS.JSON FILE
+    {
+      "tag": "UNUSED-KEYS",
+      "color": "#fa3b3b",
+      "strikethrough": false,
+      "underline": false,
+      "backgroundColor": "transparent",
+      "bold": true,
+      "italic": false
+    },
+    {
+      "tag": "DISABLED-KEYS",
+      "color": "#ffa600",
+      "strikethrough": false,
+      "underline": false,
+      "backgroundColor": "transparent",
+      "bold": true,
+      "italic": false
+    },
+    {
+      "tag": "EDITOR-KEYS",
+      "color": "#C6FF00",
+      "strikethrough": false,
+      "underline": false,
+      "backgroundColor": "transparent",
+      "bold": true,
+      "italic": false
+    },
+    {
+      "tag": "TERMINAL-KEYS",
+      "color": "#4ab1f6",
+      "strikethrough": false,
+      "underline": false,
+      "backgroundColor": "transparent",
+      "bold": true,
+      "italic": false
+    }
+  ]
 }

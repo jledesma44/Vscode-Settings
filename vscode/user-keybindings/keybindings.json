@@ -1,5 +1,6 @@
-// Place your key bindings in this file to override the defaults
+// * Place your key bindings in this file to override the defaults
 [
+  //EDITOR-KEYS: VS-CODE RELOAD-------------------------------------------------
   {
     "key": "ctrl+cmd+r",
     "command": "workbench.action.reloadWindow",
@@ -10,33 +11,18 @@
     "command": "-workbench.action.reloadWindow",
     "when": "isDevelopment"
   },
+  //EDITOR-KEYS: WRAP WITH ABBREVIATIONS-----------------------------------------
   {
     "key": "alt+w",
     "command": "editor.emmet.action.wrapWithAbbreviation"
   },
+  // EDITOR-KEYS: CREATE A NEW PROJECT TEMPLATE-----------------------------------
   {
     "key": "alt+p",
     "command": "extension.createProjectFromTemplate"
   },
-  //Disable / Enable vim.
-  {
-    "key": "ctrl+alt+v",
-    "command": "toggleVim"
-  },
-  // Switch focus to explorer
-  {
-    "key": "cmd+f",
-    "command": "revealInExplorer"
-  },
 
-  // Toggle focus to editor.
-  {
-    "key": "ctrl+1",
-    "command": "workbench.action.focusActiveEditorGroup",
-    "when": "terminalFocus"
-  },
-
-  // Tab to the previous/next editor.
+  //  EDITOR-KEYS: CYCLE THROUGH EDITOR TABS BACK AND FORTH-------------------------
   {
     "key": "cmd+k",
     "command": "workbench.action.nextEditor"
@@ -45,7 +31,7 @@
     "key": "cmd+j",
     "command": "workbench.action.previousEditor"
   },
-  // Move active editor tab left or right (useful for full-stack web dev).
+  //  EDITOR-KEYS:  MOVE EDITOR TAB RIGHT OR LEFT-------------------------------------
   {
     "key": "cmd+ctrl+j",
     "command": "moveActiveEditor",
@@ -60,7 +46,7 @@
       "to": "right"
     }
   },
-  // Traverse VSCode IntelliSense suggestions with vim keybindings.
+  //  EDITOR-KEYS:  TRAVERSE VSCODE INTELLISENSE SUGGESTIONS----------------------------
   {
     "key": "cmd+j",
     "command": "selectNextSuggestion",
@@ -71,7 +57,7 @@
     "command": "selectPrevSuggestion",
     "when": "suggestWidgetMultipleSuggestions && suggestWidgetVisible && textInputFocus"
   },
-  // Traverse VSCode quick open options with vim keybindings.
+  //  EDITOR-KEYS:  TRAVERSE VSCODE QUICK OPEN OPTIONS WITH VIM KEYBINDINGS-----------------
   {
     "key": "cmd+j",
     "command": "workbench.action.quickOpenSelectNext",
@@ -82,35 +68,64 @@
     "command": "workbench.action.quickOpenSelectPrevious",
     "when": "inQuickOpen"
   },
-  // VSCode terminal + Vim keybindings.
-  // Toggle focus to terminal.
-  {
-    "key": "ctrl+`",
-    "command": "workbench.action.terminal.focus"
-  },
-  //Create new terminal window
+
+  //  TERMINAL-KEYS:  CREATE NEW TERMINAL--------------------------------------------
   {
     "key": "cmd+n",
     "command": "workbench.action.terminal.newInActiveWorkspace"
   },
-  // Close or kill terminal window(s).
+  //  TERMINAL-KEYS:  CLOSE OR KILL OPEN TERMINALS-------------------------------------
   {
     "key": "cmd+e",
     "command": "workbench.action.terminal.kill",
     "when": "terminalFocus"
   },
-  //Maximize terminal panel.
+  //  TERMINAL-KEYS:  TERMINAL FOCUS--------------------------------------------------
+  {
+    "key": "ctrl+`",
+    "command": "workbench.action.terminal.focus"
+  },
+  // TERMINAL-KEYS:  TOGGLE THROUGH MULTIPLE TERMINALS WHEN IN TERMINAL FOCUS---------
+  {
+    "key": "cmd+k",
+    "command": "workbench.action.terminal.focusNextPane",
+    "when": "terminalFocus"
+  },
+  {
+    "key": "cmd+j",
+    "command": "workbench.action.terminal.focusPreviousPane",
+    "when": "terminalFocus"
+  },
+
+  // TERMINAL-KEYS:  TOGGLE BETWEEN TERMINAL AND EDITOR-------------------------------
+  {
+    "key": "ctrl+shift+t",
+    "command": "workbench.action.terminal.focus"
+  },
+  {
+    "key": "ctrl+shift+t",
+    "command": "workbench.action.focusActiveEditorGroup",
+    "when": "terminalFocus"
+  },
+  // TERMINAL-KEYS:  CYCLE TO NEXT TERMINAL SESSION------------------------------------
+  {
+    "key": "cmd+k",
+    "command": "workbench.action.terminal.focusNext",
+    "when": "terminalFocus"
+  },
+  // TERMINAL-KEYS:  MAXIMIZE TERMINAL PANEL-------------------------------------------
   {
     "key": "cmd+ctrl+enter",
     "command": "workbench.action.toggleMaximizedPanel"
   },
-  //Split terminal to side.
+  // TERMINAL-KEYS:  SPLILT TERMINAL TO SIDE-------------------------------------------------
   {
     "key": "cmd+d",
     "command": "workbench.action.terminal.split",
     "when": "terminalFocus && terminalProcessSupported"
   },
-  // Switch focus between split terminals.
+  // TERMINAL-KEYS:  SWITCH FOCUS BETWEEN SPLIT TERMINALS------------------------------------
+
   {
     "key": "cmd+k",
     "command": "workbench.action.terminal.focusNextPane",
@@ -121,7 +136,7 @@
     "command": "workbench.action.terminal.focusPreviousPane",
     "when": "terminalFocus && terminalProcessSupported"
   },
-  // Switch focus between tabbed terminals.
+  // TERMINAL-KEYS:  SWITCH FOCUS BETWEEN TABBED TERMINALS----------------------------------
   {
     "key": "cmd+k",
     "command": "workbench.action.terminal.focusNext",
@@ -132,17 +147,6 @@
     "command": "workbench.action.terminal.focusPrevious",
     "when": "terminalFocus && terminalProcessSupported"
   },
-  // Use tabs with vim keybindings to move selected text in visual mode.
-/*   {
-    "key": "tab",
-    "command": "tab",
-    "when": "editorTextFocus && !editorTabMovesFocus"
-  },
-  {
-    "key": "shift+tab",
-    "command": "outdent",
-    "when": "editorTextFocus && !editorTabMovesFocus"
-  }, */
 
   {
     "key": "shift+escape",
@@ -150,7 +154,7 @@
     "when": "terminalFindVisible && terminalFocus && terminalHasBeenCreated || terminalFindVisible && terminalFocus && terminalProcessSupported"
   },
 
-  //Disable default Keybindings.
+  //DISABLED-KEYS:  ******* DISABLED DEFAULT KEYBINIDINGS *************************************************
   {
     "key": "alt+cmd+down",
     "command": "-workbench.action.terminal.focusNextPane",
@@ -195,5 +199,27 @@
     "key": "shift+cmd+\\",
     "command": "-workbench.action.terminal.focusTabs",
     "when": "terminalFocus && terminalHasBeenCreated || terminalFocus && terminalProcessSupported || terminalHasBeenCreated && terminalTabsFocus || terminalProcessSupported && terminalTabsFocus"
+  },
+  {
+    "key": "shift+cmd+u",
+    "command": "simpleBrowser.show"
   }
+  // UNUSED-KEYS: *********** UNUSED KEYBINDINGS **********************************************************
+  // Open view and toggle terminal.
+  /*   {
+    "key": "ctrl+`",
+    "command": "workbench.action.terminal.focusTabs",
+    "when": "terminalFocus && terminalHasBeenCreated || terminalFocus && terminalProcessSupported || terminalHasBeenCreated && terminalTabsFocus || terminalProcessSupported && terminalTabsFocus"
+  }, */
+  // Use tabs with vim keybindings to move selected text in visual mode.
+  /*   {
+      "key": "tab",
+      "command": "tab",
+      "when": "editorTextFocus && !editorTabMovesFocus"
+  },
+  {
+      "key": "shift+tab",
+      "command": "outdent",
+      "when": "editorTextFocus && !editorTabMovesFocus"
+  }, */
 ]
