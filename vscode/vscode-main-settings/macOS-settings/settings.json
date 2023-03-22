@@ -54,7 +54,7 @@
     }
   ],
   "workbench.colorTheme": "Material Theme Darker High Contrast",
-  "materialTheme.accent": "Lime",
+  "materialTheme.accent": "Acid Lime",
   "workbench.iconTheme": "material-icon-theme",
   "workbench.colorCustomizations": {
     "[Nord Dark theme": {
@@ -136,21 +136,110 @@
       "statusBarItem.remoteBackground": "#7CB342"
     }
   },
-  "beautify.ignore": "",
   "bracket-pair-colorizer-2.depreciation-notice": false,
+  "better-comments.tags": [
+    //BETTER COMMENTS DEFAULTS
+    {
+      "tag": "!",
+      "color": "#FF2D00",
+      "strikethrough": false,
+      "underline": false,
+      "backgroundColor": "transparent",
+      "bold": false,
+      "italic": false
+    },
+    {
+      "tag": "?",
+      "color": "#3498DB",
+      "strikethrough": false,
+      "underline": false,
+      "backgroundColor": "transparent",
+      "bold": false,
+      "italic": false
+    },
+    {
+      "tag": "//",
+      "color": "#474747",
+      "strikethrough": true,
+      "underline": false,
+      "backgroundColor": "transparent",
+      "bold": true,
+      "italic": false
+    },
+    {
+      "tag": "todo",
+      "color": "#FF8C00",
+      "strikethrough": false,
+      "underline": false,
+      "backgroundColor": "transparent",
+      "bold": false,
+      "italic": false
+    },
+    {
+      "tag": "*",
+      "color": "#98C379",
+      "strikethrough": false,
+      "underline": false,
+      "backgroundColor": "transparent",
+      "bold": false,
+      "italic": false
+    },
+    //KEYBINDING SETTINGS.JSON FILE
+    {
+      "tag": "UNUSED-KEYS",
+      "color": "#fa3b3b",
+      "strikethrough": false,
+      "underline": false,
+      "backgroundColor": "transparent",
+      "bold": true,
+      "italic": false
+    },
+    {
+      "tag": "DISABLED-KEYS",
+      "color": "#ffa600",
+      "strikethrough": false,
+      "underline": false,
+      "backgroundColor": "transparent",
+      "bold": true,
+      "italic": false
+    },
+    {
+      "tag": "EDITOR-KEYS",
+      "color": "#C6FF00",
+      "strikethrough": false,
+      "underline": false,
+      "backgroundColor": "transparent",
+      "bold": true,
+      "italic": false
+    },
+    {
+      "tag": "TERMINAL-KEYS",
+      "color": "#4ab1f6",
+      "strikethrough": false,
+      "underline": false,
+      "backgroundColor": "transparent",
+      "bold": true,
+      "italic": false
+    }
+  ],
   "colorize.colorized_variables": ["CSS", "SASS", "LESS"],
-  "color-highlight.markRuler": false,
 
-  // "editor.formatOnSave": true,
   "editor.formatOnSave": true,
   "editor.hover.delay": 1000,
   "editor.bracketPairColorization.enabled": true,
   "editor.guides.bracketPairsHorizontal": true,
   "editor.guides.bracketPairs": true,
+  "editor.quickSuggestions": {
+    "strings": true
+  },
+  "editor.suggest.preview": true,
   "editor.wordWrap": "on",
-  "editor.fontSize": 13,
+  "editor.fontSize": 14,
   "editor.tabSize": 2,
-  "editor.lineNumbers": "relative",
+  "editor.colorDecorators": true,
+  "editor.suggest.showColors": false,
+  "editor.suggest.showCustomcolors": true,
+  /*   "editor.lineNumbers": "relative", */
   "editor.renderWhitespace": "none",
   "editor.hover.enabled": true,
   "editor.fontFamily": " Menlo, Monaco, 'Courier New', monospace",
@@ -173,28 +262,38 @@
   "git.confirmSync": false,
   "git.ignoreMissingGitWarning": true,
   "git.openRepositoryInParentFolders": "never",
-  "html.format.enable": false,
   "[html]": {
     "editor.defaultFormatter": null
   },
+  "html.format.indentInnerHtml": true,
+  "html.format.enable": false,
   "indentRainbow.ignoreErrorLanguages": ["markdown, css"],
   "indentRainbow.excludedLanguages": ["plaintext"],
-  "javascript.format.enable": false,
   "[javascript]": {
-    "editor.formatOnSave": false
+    "editor.formatOnSave": true
   },
   "[javascriptreact]": {
-    "editor.formatOnSave": false
+    "editor.formatOnSave": true
   },
   "liveServer.settings.AdvanceCustomBrowserCmdLine": "",
   "liveServer.settings.CustomBrowser": "firefox",
   "liveServer.settings.donotShowInfoMsg": true,
   "liveServer.settings.donotVerifyTags": true,
   "open-in-browser.default": "firefox",
-  "prettier.jsxSingleQuote": true,
   "prettier.singleQuote": true,
+  "prettier.printWidth": 120,
   "settingsSync.ignoredSettings": ["editor.fontSize"],
   "security.workspace.trust.untrustedFiles": "open",
+  "svgPreview.style": {
+    "html": {
+      "background-position": "0 0, 13px 13px",
+      "background-size": "26px 26px",
+      "background-image": "linear-gradient(45deg, #141414 25%, transparent 25%, transparent 75%, #141414 75%, #141414), linear-gradient(45deg, #141414 25%, transparent 25%, transparent 75%, #141414 75%, #141414)"
+    }
+  },
+  "tailwindCSS.includeLanguages": {
+    "plaintext": "html"
+  },
   "terminal.external.osxExec": "iTerm.app",
   "terminal.integrated.fontSize": 14,
   "terminal.integrated.defaultProfile.windows": "Ubuntu (WSL)",
@@ -229,7 +328,7 @@
   },
   "terminal.integrated.tabs.location": "left",
   "terminal.integrated.cursorBlinking": true,
-
+  "typescript.experimental.tsserver.web.enableProjectWideIntellisense": true,
   /* Vim key bindings */
   "vim.easymotion": true,
   "vim.incsearch": true,
@@ -237,6 +336,12 @@
   "vim.useCtrlKeys": true,
   "vim.hlsearch": true,
   "vim.insertModeKeyBindings": [
+    {
+      "before": ["j", "j"],
+      "after": ["<Esc>"]
+    }
+  ],
+  "vim.commandLineModeKeyBindings": [
     {
       "before": ["j", "j"],
       "after": ["<Esc>"]
